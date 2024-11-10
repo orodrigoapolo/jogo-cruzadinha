@@ -17,9 +17,11 @@
             margin: 0;
             padding: 0;
         }
-
+        h1{
+            margin-top: 50px;
+        }
         body {
-            background-color: #eeddaf;
+            background-color: #ecf8fe;
             font-family: "Noto Sans";
         }
 
@@ -51,7 +53,6 @@
 
         button {
             border: 0px;
-            background-color: #EC7063;
             color: #ffffff;
             padding: 10px;
             font-size: 20px;
@@ -65,18 +66,16 @@
         }
 
         #div_game {
-            /* background-color: #ffffff; */
             margin: auto;
             border-radius: 50px;
-            background: #eeddaf;
-            box-shadow: 20px 20px 60px #cabc95;
+            background: linear-gradient(145deg, #d4dfe5, #fdffff);
+            box-shadow: 20px 20px 60px #c9d3d8;
             width: 800px;
             height: fit-content;
             padding: 30px;
         }
 
         #div_questions {
-            /* background-color: #85C1E9; */
             width: 700px;
             margin: auto;
         }
@@ -161,10 +160,28 @@
 
         .perguntas {
             border-radius: 50px;
-            background: linear-gradient(145deg, #d6c79e, #ffecbb);
-            box-shadow: 20px 20px 60px #cabc95;
+            border-radius: 50px;
+            background: linear-gradient(145deg, #d4dfe5, #fdffff);
+            box-shadow: 20px 20px 60px #c9d3d8;
             padding: 5px;
-            border: black solid 2px;
+            border: #2C3E50 solid 2px;
+        }
+
+        #input_answer{
+            padding-left: 15px;
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 50px;
+            background: #ecf8fe;
+            box-shadow: inset 20px 20px 60px #c9d3d8,
+                inset -20px -20px 60px #ffffff;
+        }
+        
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -210,18 +227,22 @@
                         <input type="text" id="input_answer" placeholder="Sua Reposta"><br>
                         <button id="button_verify" onclick="verify()" class="button">Verificar</button>
                     </center>
-                    
-                    
+
+
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </article><br><br>
     <footer>
-        <div class="container"><br>
-            <p>Developed by Carlos Santana <br>
-                RA: 01201095 <br>
-                1ADS-A
+        <div class="container" class="footer">
+            <p>Developed by Carlos Santana
+            </p>
+            <p>
+                Edited by Rodrigo Gonçalves
+            </p>
+            <p>
+                CSS by Victor Trevisan
             </p>
         </div>
     </footer>
